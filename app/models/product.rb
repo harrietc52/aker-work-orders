@@ -18,9 +18,6 @@ class Product < ApplicationRecord
 
   def self.product_class_symbol_to_human_product_class(product_class_symbol)
     I18n.t("activerecord.attributes.#{model_name.i18n_key}.product_class.#{product_class_symbol}")
-  end  
-
-  def self.product_class_symbol_to_human_product_class(product_class_symbol)
-    I18n.t("activerecord.attributes.#{model_name.i18n_key}.product_class.#{product_class_symbol}")
   end
+
 end
